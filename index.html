@@ -28,9 +28,14 @@
         if(mode == "full"){
           $('#input_area').hide();
           $('#output_area').removeClass('col-md-6').addClass('col-md-12');
-        } else {
+        } else if(mode == "half") {
           $('#input_area').show();
           $('#output_area').removeClass('col-md-12').addClass('col-md-6');
+        } else if(mode == "vertical"){
+          var half = parseInt($('textarea').css("height"))/2;
+          $('#input_area').removeClass('col-md-6');
+          $('textarea').css('height',half);
+          $('#output_area').removeClass('col-md-6');
         }
       });
     </script>
@@ -40,6 +45,7 @@
           <select class="selectpicker form-control" id="mode-select" style="margin-top: 10px;">
             <option value="full">Full Viwer</option>
             <option value="half" selected="selected">50:50</option>
+            <option value="vertical">Vertical</option>
           </select>
         </div>
       </div>
@@ -51,7 +57,7 @@
             <textarea id="original_text" class="form-control" rows="30"></textarea>
           </div>
         </div>
-        <p class="col-md-6" id="output_area"></p>
+        <p class="col-md-6" id="output_area"></p> 
       </div>
     </div>
   </body>
