@@ -6,47 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Simple Html Editor</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/simple_html_editor.js"></script>
   </head>
   <body>
-    <script>
-      $(document).on('keyup', '#original_text',function(){
-        var text_ori = $('#original_text').val();
-        $('#output_area').html(text_ori);
-      });
-      $(document).on('change', '#mode-select',function(){
-        var mode = $('#mode-select option:selected').val();
-        if(mode == "full"){
-          $('#input_area').hide();
-          $('#output_area').removeClass('col-md-6').addClass('col-md-12');
-        } else if(mode == "half") {
-          $('#input_area').show();
-          $('#output_area').removeClass('col-md-12').addClass('col-md-6');
-        } else if(mode == "vertical"){
-          var half = parseInt($('textarea').css("height"))/2;
-          $('#input_area').removeClass('col-md-6');
-          $('textarea').css('height',half);
-          $('#output_area').removeClass('col-md-6');
-        }
-      });
-    </script>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header form-group">
-          <select class="selectpicker form-control" id="mode-select" style="margin-top: 10px;">
-            <option value="full">Full Viwer</option>
-            <option value="half" selected="selected">50:50</option>
-            <option value="vertical">Vertical</option>
-          </select>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <i class="navbar-brand"><b>SimpleHtmlEditor</b></i>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <div class="navbar-header form-group">
+              <select class="selectpicker form-control" id="mode-select" style="margin-top: 10px;">
+                <optgroup label="View Mode">
+                  <option value="full">Full Viwer</option>
+                  <option value="half" selected="selected">50:50</option>
+                  <option value="vertical">Vertical</option>
+                </optgroup>
+              </select>
+            </div>
+          </ul>
         </div>
       </div>
     </nav>
@@ -54,7 +47,7 @@
       <div class="row">
         <div class="col-md-6" id="input_area">
           <div class="form-group">
-            <textarea id="original_text" class="form-control" rows="30"></textarea>
+            <textarea id="original_text" class="form-control" rows="30" style="background-color: lightyellow; max-width: 100%;"></textarea>
           </div>
         </div>
         <p class="col-md-6" id="output_area"></p> 
