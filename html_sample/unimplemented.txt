@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <li class="list-group-item">enter the tab key</li>
+  <li class="list-group-item">code highlight</li>
+  <li class="list-group-item">[bug] when input the textarea tag then tags under the textarea tag are no shown</li>
+</ul>
