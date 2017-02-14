@@ -1,0 +1,13 @@
+<form class="form-group">
+  <input type="text" class="form-control">
+  <select class="selectpicker form-control">
+    <optgroup label="label">
+      <option value=""></option>
+      <option value="option1">option1</option>
+      <option value="option2">option2</option>
+      <option value="option3">option3</option>
+      <option value="option4">option4</option>
+    </optgroup>
+  </select>
+  <button type="submit" class="btn btn-primary">submit!</button
+</form

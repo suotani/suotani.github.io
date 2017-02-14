@@ -1,26 +1,39 @@
+var response = function(){
+ $('#output_area').html($('#original_text').val()); 
+}
+
 $(document).on('keyup', '#original_text',function(){
-  var text_ori = $('#original_text').val();
-  $('#output_area').html(text_ori);
+  response();
 });
-var reset_input = function(){
+
+var reshape_input = function(){
   var input_area = $('#input_area');
   input_area.show();
   $('textarea').css('height', 600);
   if (!input_area.hasClass('col-md-6')) { input_area.addClass('col-md-6'); }
 };
-var reset_output = function(){
+
+var reshape_output = function(){
   var output_area = $('#output_area');
   if(output_area.hasClass('col-md-12')) { output_area.removeClass('col-md-12');}
   if(!output_area.hasClass('col-md-6')) { output_area.addClass('col-md-6');}
 }
+
 $(document).ready(function(){
-  reset_input();
-  reset_uotput();
+  reshape_input();
+  reshape_output();
 });
+
+var reset_screen = function () {
+  $('#original_text').html(null);
+  $('#output_area').html(null);
+};
+
+
 $(document).on('change', '#mode-select',function(){
   var mode = $('#mode-select option:selected').val();
-  reset_input();
-  reset_output();
+  reshape_input();
+  reshape_output();
   if(mode == "full"){
     $('#input_area').hide();
     $('#output_area').removeClass('col-md-6').addClass('col-md-12');
@@ -30,4 +43,17 @@ $(document).on('change', '#mode-select',function(){
     $('textarea').css('height',half);
     $('#output_area').removeClass('col-md-6');
   } else {}
+});
+
+$(document).on('change', '#sample-select', function(){
+    var sample = $('#sample-select option:selected').val();
+    if(sample == 'reset'){
+      reset_screen();
+    } else {
+      $("#original_text").load("./html_sample/" + sample + ".txt", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success"){
+          response();
+        }
+      });
+    }
 });

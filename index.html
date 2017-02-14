@@ -30,15 +30,28 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <div class="navbar-header form-group">
-              <select class="selectpicker form-control" id="mode-select" style="margin-top: 10px;">
-                <optgroup label="View Mode">
-                  <option value="full">Full Viwer</option>
-                  <option value="half" selected="selected">50:50</option>
-                  <option value="vertical">Vertical</option>
-                </optgroup>
-              </select>
-            </div>
+            <li>
+              <div class="navbar-header form-group">
+                <select class="selectpicker form-control" id="mode-select" blank="true" style="margin-top: 10px;">
+                  <optgroup label="View Mode">
+                    <option value="full">Full Viwer</option>
+                    <option value="half" selected="selected">50:50</option>
+                    <option value="vertical">Vertical</option>
+                  </optgroup>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="navbar-header form-group">
+                <select class="selectpicker form-control" id="sample-select" style="margin-top: 10px;">
+                  <optgroup label="Show Sample">
+                    <option value="reset"></option>
+                    <option value="table_sample">Table</option>
+                    <option value="form_sample">Form</option>
+                  </optgroup>
+                </select>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
