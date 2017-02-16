@@ -1,11 +1,16 @@
+/* reflect from textarea */
 var response = function(){
  $('#output_area').html($('#original_text').val()); 
 }
 
+
+/* reflect when keyup */
 $(document).on('keyup', '#original_text',function(){
   response();
 });
 
+
+/* initialize size of textarea */
 var reshape_input = function(){
   var input_area = $('#input_area');
   input_area.show();
@@ -13,23 +18,27 @@ var reshape_input = function(){
   if (!input_area.hasClass('col-md-6')) { input_area.addClass('col-md-6'); }
 };
 
+
+/* initialize size of html area */
 var reshape_output = function(){
   var output_area = $('#output_area');
   if(output_area.hasClass('col-md-12')) { output_area.removeClass('col-md-12');}
   if(!output_area.hasClass('col-md-6')) { output_area.addClass('col-md-6');}
 }
 
+/* initialize view mode */
 $(document).ready(function(){
   reshape_input();
   reshape_output();
 });
 
+/* reset textarea and html area */
 var reset_screen = function () {
   $('#original_text').html(null);
   $('#output_area').html(null);
 };
 
-
+/* change view mode */
 $(document).on('change', '#mode-select',function(){
   var mode = $('#mode-select option:selected').val();
   reshape_input();
@@ -45,6 +54,8 @@ $(document).on('change', '#mode-select',function(){
   } else {}
 });
 
+
+/* load sample html */
 $(document).on('change', '#sample-select', function(){
     var sample = $('#sample-select option:selected').val();
     if(sample == 'reset'){
@@ -56,4 +67,18 @@ $(document).on('change', '#sample-select', function(){
         }
       });
     }
+});
+
+/* input tab key */
+$(function(){
+  $("#original_text").keydown(function(e){
+    if (e.keyCode === 9) {
+      e.preventDefault();
+      var elem = e.target;
+      var val = elem.value;
+      var pos = elem.selectionStart;
+      elem.value = val.substr(0, pos) + '\t' + val.substr(pos, val.length);
+      elem.setSelectionRange(pos + 1, pos + 1);
+    }
+  });
 });
