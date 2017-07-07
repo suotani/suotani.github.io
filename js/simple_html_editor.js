@@ -9,6 +9,20 @@ $(document).on('keyup', '#original_text',function(){
   response();
 });
 
+var response_ace = function(){
+  var text = "";
+ $(".ace_line").each(function(){
+    text = text + "\n" + $(this).text();
+ });
+ $('#output_area').html(text);
+}
+
+/* reflect when keyup */
+$(document).on('keyup', '.ace_text-input',function(){
+  console.log("aaaaaa");
+  response_ace();
+});
+
 
 /* initialize size of textarea */
 var reshape_input = function(){
