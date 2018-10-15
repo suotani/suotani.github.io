@@ -10,6 +10,7 @@
 
 .header-nav{
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 17px;
 }
 .header-nav ul{
