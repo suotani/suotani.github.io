@@ -1,8 +1,0 @@
-<table class="table table-striped table-hover">
-  <tr><th>table header1</th><th>table header3</th><th>table header3</th></tr>
-  <tr><td>table body1</td><td>table body2</td><td>table body3</td></tr>
-  <tr><td>table body1</td><td>table body2</td><td>table body3</td></tr>
-  <tr><td>table body1</td><td>table body2</td><td>table body3</td></tr>
-  <tr><td>table body1</td><td>table body2</td><td>table body3</td></tr>
-  <tr><td>table body1</td><td>table body2</td><td>table body3</td></tr>
-</table>
