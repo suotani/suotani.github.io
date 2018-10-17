@@ -15,106 +15,198 @@
   </head>
   <body>
     <header>
-      <div class="header-top">
-        <div class="container">
-          <p>テキストテキストテキストテキストテキスト</p>
-        </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <div>
+        <a class="navbar-brand" href="#">BAAA Corporation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
 
-      <div class="container header-main">
-        <div class="header-nav">
-          <h1>BAAA Corporation</h1>
-          <ul>
-            <li><span><i class="fas fa-caret-right"></i></span><a href="#">会社概要</a></li>
-            <li><span><i class="fas fa-caret-right"></i></span><a href="#">事業紹介</a></li>
-            <li><span><i class="fas fa-caret-right"></i></span><a href="#">採用情報</a></li>
-            <li><span><i class="fas fa-caret-right"></i></span><a href="#">お問い合わせ</a></li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span><i class="fas fa-caret-right"></i></span>会社概要</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span><i class="fas fa-caret-right"></i></span>事業紹介</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span><i class="fas fa-caret-right"></i></span>採用情報</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span><i class="fas fa-caret-right"></i></span>お問い合わせ</a>
+          </li>
+        </ul>
       </div>
+    </nav>
     </header>
 
     <main>
-      <div class="container main-visual-container">
+      <div class="main-visual-container">
         <div class="main-visual">
-          <img src="./main-visual.png">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="main-visual.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="main-visual.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="main-visual.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="main-news">
-              <h2>お知らせ</h2>
-              <div class="news-item row">
-                <div class="col-md-2 news-day">
-                  <p>2013年10月20日</p>
-                </div>
-                <div class="col-md-10 news-text">
-                  <p>
-                    <a href="#">
-                      <u>
-                        テキストテキストテキストテキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキストテキスト
-                      </u>
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="news-item row">
-                <div class="col-md-2 news-day">
-                  <p>2013年10月20日</p>
-                </div>
-                <div class="col-md-10 news-text">
-                  <p>
-                    <a href="#">
-                      <u>
-                        テキストテキストテキストテキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキストテキスト
-                      </u>
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="news-item row">
-                <div class="col-md-2 news-day">
-                  <p>2013年10月20日</p>
-                </div>
-                <div class="col-md-10 news-text">
-                  <p>
-                    <a href="#">
-                      <u>
-                        テキストテキストテキストテキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキストテキスト
-                      </u>
-                    </a>
-                  </p>
-                </div>
-              </div>
+        <div class="main-news">
+          <h2>お知らせ</h2>
+          <div class="news-item">
+            <div class="news-day">
+              <p>2013年10月20日<span class="news-badge">NEWS</span></p>
+            </div>
+            <div class="news-text">
+              <p>
+                <a href="#">
+                  <u>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                  </u>
+                </a>
+              </p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="banner">
-              <div class="banner-item">
-                <img src="./banner.png">
-              </div>
-              <div class="banner-item">
-                <img src="./banner.png">
-              </div>
+          <div class="news-item">
+            <div class="news-day">
+              <p>2013年10月20日<span class="product-badge">PRODUCT</span></p>
+            </div>
+            <div class="news-text">
+              <p>
+                <a href="#">
+                  <u>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                  </u>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-day">
+              <p>2013年10月20日<span class="product-badge">PRODUCT</span></p>
+            </div>
+            <div class="news-text">
+              <p>
+                <a href="#">
+                  <u>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                  </u>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-day">
+              <p>2013年10月20日<span class="news-badge">NEWS</span></p>
+            </div>
+            <div class="news-text">
+              <p>
+                <a href="#">
+                  <u>
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                  </u>
+                </a>
+              </p>
             </div>
           </div>
         </div>
+
+        <div class="event">
+          <h2>イベント情報</h2>
+          <div class="event-centents">
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキス
+              </p>
+            </div>
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+
+            </div>
+            <div class="event-item">
+              <div class="event-image"><img src="main-content.png" /></div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+
+          <div class="link-to-events">
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-primary">詳細はこちら</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="link-to-top">
+        <a href="#"><i class="fas fa-angle-up"></i></a>
       </div>
     </main>
 
     <footer>
-      <div class="container footer-wrap">
-        <div class="footer-text">
-          <p>Copylight(C) 2013 BAAA Corporation ALL Rights Reserved.</p>
+      <div class="footer-wrap">
+        <div class="container footer-copylight">
+          <div class="footer-text">
+            <p>Copylight(C) 2013 BAAA Corporation ALL Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
