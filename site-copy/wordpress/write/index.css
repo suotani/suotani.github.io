@@ -167,6 +167,7 @@ h2{
 
 .paging-button:hover{
   color: #777;
+  text-decoration: none;
 }
 
 .paging-button.active{
@@ -179,13 +180,20 @@ h2{
   font-weight: 100;
 }
 
+footer{
+  margin-bottom: 70px;
+}
+
 .footer{
-  display: flex;
-  flex-wrap: wrap;
   border-top: solid 1px #d6d6d6;
   border-bottom: solid 1px #d6d6d6;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
+}
+
+.footer-main{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .parsonal{
@@ -207,6 +215,7 @@ h2{
 .parsonal-name{
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .parsonal-links{
@@ -230,11 +239,20 @@ h2{
 .parsonal-text{
   padding: 10px 30px 0 0;
   font-size: 17px;
+  color: #777;
+}
+
+.footer-title{
+  margin-bottom: 27px;
 }
 
 .footer-right1{
   width: 22%;
   padding-right: 15px;
+}
+
+.footer-text{
+  color: #777;
 }
 
 .footer-right2{
@@ -243,11 +261,80 @@ h2{
   padding-left: 10px;
 }
 
+.recent-content{
+  color: #777;
+}
+
+.recent-content a{
+  font-size: 18px;
+  color: #777;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.recent-content a:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.recent-content p{
+  margin-top: 5px;
+  color: #a3a1a1;
+}
+
 .footer-right3{
   width: 22%;
   padding-right: 15px;
 }
 
+.category-link{
+  margin-bottom: 10px;
+}
+
+.category a{
+  font-size: 18px;
+  color: #777;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.category a:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-search-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-search-form input{
+  outline: none;
+  padding-left: 10px;
+  height: 45px;
+  width: 22%;
+  border: solid 1px #d6d6d6;
+}
+
+.footer-search-form input:focus{
+  border: solid 2px #97dff1;
+}
+
 .copylight{
-  padding-top: 50px;
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.copylight .icons{
+  width: 33%
+}
+
+.copylight p{
+  color: #777;
+}
+
+.copylight a{
+  color: #666;
 }
