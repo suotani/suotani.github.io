@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 30px;
+  }
+
+  header{
+    margin-top: 10px;
+  }
+
+  header.container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-main{
+    display: none;
+  }
+
+  .header-wrap p{
+    width: 100%;
+  }
+
+  .nav-toggle-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 35px;
+  }
+}
