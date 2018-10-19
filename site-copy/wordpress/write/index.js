@@ -22,5 +22,7 @@ $(".search-form input").focusout(function(){
 });
 
 $(".nav-toggle-btn").click(function(){
-  $(".header-main").toggle();
+  $(".header-main").toggleClass("header-visible");
+  $(".nav-btn-wrap").toggleClass("active");
+  $("body").toggleClass("fixed");
 });

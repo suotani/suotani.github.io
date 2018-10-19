@@ -11,6 +11,10 @@ body{
   display: none;
 }
 
+a {
+  color: #777;
+}
+
 header{
   margin-top: 70px;
 }

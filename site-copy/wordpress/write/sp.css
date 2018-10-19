@@ -12,13 +12,53 @@
     margin-top: 10px;
   }
 
+  .sp{
+    display: block;
+  }
+
   .container{
     padding: 0 10px;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
   }
 
   header.container{
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .header-main li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 23px;
+  }
+
+  .default-ul-hide{
+    margin-bottom: 0 !important;
+  }
+
+  .header-main i{
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .main-visual{
@@ -33,6 +73,19 @@
     display: none;
     position: fixed;
     background-color: rgba(255,255,255,0.9);
+  }
+
+  .header-visible{
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .search-form{
@@ -50,6 +103,63 @@
     font-size: 35px;
     position: fixed;
     right: 5px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    z-index: 1000;
+  }
+
+  .nav-btn-wrap{
+    position: relative;
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-btn-wrap:before,
+  .nav-btn-wrap:after,
+  .nav-btn-wrap span{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    height: 4px;
+    margin: auto;
+    background: #000;
+  }
+
+  .nav-btn-wrap:before{
+    transform: translate(0, -12px);
+    transition: transform 150ms;
+  }
+
+  .nav-btn-wrap:after{
+    transform: translate(0, 12px);
+    transition: transform 150ms;
+  }
+
+  .nav-btn-wrap.active:before{
+    transform: rotate(45deg);
+  }
+  .nav-btn-wrap.active:after{
+    transform: rotate(-45deg);
+  }
+
+  .nav-btn-wrap.active span{
+    display: none;
+  }
+
+  .dropdown-menu{
+    position: inherit;
+  }
+
+  .menu-wrap a{
+    border: none;
+    background-color: inherit;
+    width: inherit;
+    text-align: center;
+    margin-top: 7px;
   }
 
   .post-date {
