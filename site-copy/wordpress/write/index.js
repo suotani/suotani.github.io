@@ -20,3 +20,7 @@ $(".search-form input").focusout(function(){
   $(".search-form form").hide();
   $("#search-btn").show();
 });
+
+$(".nav-toggle-btn").click(function(){
+  $(".header-main").toggle();
+});
