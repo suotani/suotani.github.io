@@ -2,6 +2,7 @@ body{
 	font-family :
   'Lato',
 	serif;
+  margin-right: 17px;
 }
 
 a{
@@ -94,6 +95,11 @@ header{
   margin-right: 30px;
 }
 
+.header-icons i{
+  color: #777;
+  cursor: pointer;
+}
+
 .search-icon{
   margin-right: 0;
   font-size: 16px;
@@ -143,6 +149,49 @@ header{
 main{
   margin-top: 65px;
   border-bottom: solid 1px #eaeaea;
+}
+
+.hidden{
+  display: none;
+}
+
+.scroll-stop{
+  overflow: hidden;
+}
+
+.search-wrap{
+  position: fixed;
+  display: none;
+  top: 135px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.97);
+  z-index: 500;
+}
+
+.search-wrap p{
+  text-align: center;
+  margin-top: 24px;
+}
+
+.search-wrap form{
+  text-align: center;
+}
+
+.search-wrap input{
+  width: 574px;
+  height: 90px;
+  outline: none;
+  border: none;
+  font-size: 38px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.search-wrap i{
+    font-size: 24px;
+    color: #c3c3c3;
 }
 
 .main-wrap{
