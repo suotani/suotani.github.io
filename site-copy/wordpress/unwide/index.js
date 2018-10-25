@@ -45,3 +45,22 @@ $(".header-list-parent").click(function(){
     }
   }
 });
+
+function btnShow(){
+  console.log($(window).scrollTop());
+  if($(window).scrollTop() > 60){
+    $("btn-top-top").show();
+  }else{
+    $("btn-top-top").hide();
+  }
+
+}
+
+$(window).scroll(function(){
+  console.log($(window).scrollTop() > 60);
+  if($(window).scrollTop() > 200){
+    $(".btn-to-top").show();
+  }else{
+    $(".btn-to-top").hide();
+  }
+});

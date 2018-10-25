@@ -1,13 +1,9 @@
-html{
-  overflow: auto;
-  height: 100%;
-}
+t
 
 body{
 	font-family :
   'Lato',
 	'sun serif';
-  margin-right: 17px;
 }
 
 a{
@@ -32,7 +28,7 @@ li{
 }
 
 header{
-  position: sticky;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -160,8 +156,7 @@ main{
 }
 
 .scroll-stop{
-  overflow: hidden;
-  height: 100%;
+  position: fixed;
 }
 
 .search-wrap{
@@ -206,10 +201,11 @@ main{
 
 h1{
   display: flex;
-  justify-content: center;
-  margin-top: 137px;
-  margin-bottom: 50px;
-  font-size: 59px;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 59px;
+    font-weight: 100;
 }
 
 .carousel-control-prev {
@@ -532,4 +528,18 @@ footer{
 
 .footer-copylight p{
   text-align: center;
+}
+
+.btn-to-top{
+  position: fixed;
+  bottom: 19px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: rgba(0,0,0,0.35);
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  display: none;
 }
