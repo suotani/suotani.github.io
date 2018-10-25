@@ -33,7 +33,7 @@
   .header-list-parent i.fa-caret-down{
     position: absolute;
     line-height: 46px;
-    right: 80px;
+    right: 14px;
     top: 0px;
   }
 
@@ -45,8 +45,8 @@
     width: 100%;
   }
 
-  li.search-icon{
-    margin-right: 64px;
+  .header-icons li {
+      margin-right: 21px;
   }
 
   .header-sub-list{
@@ -74,8 +74,18 @@
   }
 
   .sp-menu-btn{
-    width: 28%;
+    width: 40%;
     font-size: 25px;
+  }
+
+  .search-wrap input {
+      width: 90%;
+      font-size: 24px;
+      text-align: center;
+  }
+
+  .search-wrap input a{
+    display: none;
   }
 
 }
