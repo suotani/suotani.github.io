@@ -20,6 +20,7 @@
     background-color: #eee;
     margin-left: -15px;
     display: none;
+    z-index: 500;
   }
 
   li.header-list-parent{
@@ -81,6 +82,9 @@
     font-size: 18px;
   }
 
+  .header-list-parent.shop-cart .cart-link p{
+    display: inline;
+  }
   .header-list-parent.shop-cart span{
     position: unset;
   }
