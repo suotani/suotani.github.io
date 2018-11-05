@@ -9,6 +9,10 @@ body{
   display: none;
 }
 
+.pc{
+	display: block;
+}
+
 .container{
   max-width: 1250px;
 }
