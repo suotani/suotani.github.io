@@ -11,16 +11,80 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="sp.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+		<script language="javascript" src="side.js"></script>
     <title>Uotani Satoshi Protfolio</title>
   </head>
   <body>
-    <a href="./site-copy/test-corporate/level1/index.html">level1</a><br />
-    <a href="./site-copy/test-corporate/level2/index.html">level2</a><br />
-    <a href="./site-copy/test-corporate/level3/index.html">level3</a><br />
-    <a href="./site-copy/test-corporate/level4/index.html">level4</a><br />
+		<div class="portfolio-zone">
+			<header>
+				<h1>Uotani Hab</h1>
+				<div class="menu-btn"><i class="fas fa-bars"></i></div>
+				<ul class="menu-list">
+					<li><a href="#coding">Coding</a></li>
+					<li><a href="#art">Art</a></li>
+					<li><a href="#profile">Profile</a></li>
+				</ul>
+			</header>
+			
+			<main>
+				<h2 id="coding">Coding practice</h2>
+				<p class="section-explain">既存のワードプレステーマなどを模写コーディングしました。</p>
+				<div class="contents-wrapper">
+					<div class="contents">
+						<div class="content">
+							<p class="title">UNWIDE</p>
+							<img src="img/unwide-pc.png" class="pc-site">
+							<img src="img/unwide-sp.png" class="sp-site">
+							<a href="site-copy/wordpress/unwide/index.html">Show site</a>
+						</div>
 
-    <a href="./site-copy/wordpress/write/index.html">Write Thema</a><br />
-		<a href="./site-copy/wordpress/unwide/index.html">Unwide Thema</a><br />
-		<a href="./site-copy/wordpress/xeory/index.html">Xeory Thema</a><br />
+						<div class="content">
+							<p class="title">WRITE</p>
+							<img src="img/write-pc.png" class="pc-site">
+							<img src="img/write-sp.png" class="sp-site">
+							<a href="site-copy/wordpress/write/index.html">Show site</a>
+						</div>
+
+						<div class="content">
+							<p class="title">Xeory Extension</p>
+							<img src="img/xeory-pc.png" class="pc-site">
+							<img src="img/xeory-sp.png" class="sp-site">
+							<a href="site-copy/wordpress/xeory/index.html">Show site</a>
+						</div>
+
+						<div class="content">
+							<p class="title">Corporate Site</p>
+							<img src="img/level4-pc.png" class="pc-site">
+							<img src="img/level4-sp.png" class="sp-site">
+							<a href="site-copy/test-corporate/level4/index.html">Show site</a>
+						</div>
+					</div>
+				</div>
+				
+				<h2 id="art">Art</h2>
+				<p class="section-explain">
+					Processing(p5.js)で作品を作っています。
+				</p>
+				<div class="contents-wrapper">
+					<div class="contents">
+						<div class="content">
+							<p class="title">UNWIDE</p>
+							<img src="img/unwide-pc.png" class="pc-site">
+							<a href="site-copy/wordpress/unwide/index.html">Show site</a>
+						</div>
+					</div>
+				</div>
+				
+				<h2 id="profile">Profile</h2>
+				<p class="section-explain">
+					自己紹介と経歴
+				</p>
+			</main>
+			
+			<footer></footer>
+		</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+		<script src="index.js"></script>
   </body>
 </html>

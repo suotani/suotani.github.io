@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px) {
+
+  .sp{
+    display: block;
+  }
+	
+	canvas{
+		display: none;
+	}
+	.portfolio-zone{
+		padding-left: 0;
+	}
+	
+	/*header*/
+	
+	header{
+		line-height: 50px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+	  align-items: unset;
+	}
+	
+	.menu-btn{
+		display: block;
+    margin-right: 20px;
+    font-size: 24px;
+	}
+	
+	header ul{
+		display: none;
+    width: 100%;
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    padding: 0px;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(221, 221, 221);
+	}
+	h1{
+		padding: 5px;
+	}
+	
+	/*main*/
+	
+	h2{
+		margin-top: 130px;
+	}
+	
+	.content{
+		width: 100%;
+	}
+}
