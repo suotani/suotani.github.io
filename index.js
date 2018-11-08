@@ -4,4 +4,8 @@ $(".menu-btn").click(function(){
 	}else{
 		$(".menu-list").slideUp();
 	}
-})
+});
+
+$(".menu-list a").click(function(){
+	$(".menu-list").hide();
+});
